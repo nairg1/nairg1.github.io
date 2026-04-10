@@ -970,7 +970,9 @@ footer {
     .hero-photo-wrap { align-items: center; }
     .hero-links { justify-content: center; flex-wrap: wrap; }
     .hero-link { padding: 8px 16px; font-size: 13px; }
-    .hero h1 { font-size: 32px; }
+    .hero h1 { font-size: 34px; }
+    .hero h1 .hero-word:nth-child(2),
+    .hero h1 .hero-word:nth-child(3) { display: inline; }
     .hero-bio { font-size: 15px; margin-bottom: 24px; }
     .hero-address { font-size: 11px; }
 
@@ -981,6 +983,7 @@ footer {
 
     /* Education */
     .edu-card { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .edu-card .edu-logo { align-self: flex-start; }
     .edu-year { align-self: flex-start; }
     .edu-gpa { display: block; margin-left: 0; margin-top: 2px; }
 
@@ -1003,5 +1006,5 @@ footer {
 
     /* Footer */
     .footer-inner { flex-direction: column; text-align: center; }
-    .scroll-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+    .scroll-top { bottom: 16px; right: 16px; width: 36px; height: 36px; border-radius: 10px; }
 }
