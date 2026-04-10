@@ -935,13 +935,13 @@ footer {
 
 /* ── Mobile ── */
 @media (max-width: 640px) {
-    .section { padding: 40px 20px; }
-    .hero { padding: 60px 20px 40px; flex-direction: column; text-align: center; }
-    .hero-photo { width: 180px; height: 180px; }
-    .hero-links { justify-content: center; }
+    .section { padding: 40px 16px; }
     .section-title { font-size: 24px; margin-bottom: 24px; }
+
+    /* Nav */
     .nav-sub { display: none; }
     main { padding-top: var(--nav-height); }
+    .nav-pages a { font-size: 13px; padding: 6px 10px; }
     .nav-sections { display: none; }
     .nav-sections.open {
         display: flex;
@@ -958,12 +958,50 @@ footer {
         animation: fadeIn 0.2s ease;
     }
     .nav-mobile-toggle { display: block; }
-    .edu-card { flex-direction: column; gap: 8px; }
+
+    /* Hero */
+    .hero {
+        padding: 60px 16px 40px;
+        flex-direction: column;
+        text-align: center;
+        gap: 28px;
+    }
+    .hero-photo { width: 160px; height: 160px; }
+    .hero-photo-wrap { align-items: center; }
+    .hero-links { justify-content: center; flex-wrap: wrap; }
+    .hero-link { padding: 8px 16px; font-size: 13px; }
+    .hero h1 { font-size: 32px; }
+    .hero-bio { font-size: 15px; margin-bottom: 24px; }
+    .hero-address { font-size: 11px; }
+
+    /* News */
+    .news-item { gap: 12px; }
+    .news-date { min-width: 75px; font-size: 12px; }
+    .news-text { font-size: 13px; }
+
+    /* Education */
+    .edu-card { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .edu-year { align-self: flex-start; }
+    .edu-gpa { display: block; margin-left: 0; margin-top: 2px; }
+
+    /* Experience */
     .timeline-header { flex-direction: column; gap: 6px; }
     .timeline::before { left: 11px; }
-    .timeline-item { padding-left: 40px; }
-    .timeline-dot { left: 4px; }
-    .pub-card { padding: 22px; }
+    .timeline-item { padding-left: 36px; }
+    .timeline-dot { left: 5px; }
+    .timeline-card { flex-direction: column; gap: 12px; padding: 20px; }
+
+    /* Publications */
+    .pub-card { padding: 20px; }
+    .pub-title { font-size: 15px; }
+    .pub-links { flex-direction: column; }
+    .pub-links .scholar-link { justify-content: center; }
+
+    /* Skills */
+    #skills .skills-tags { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+    .skill-tag { padding: 8px 14px; font-size: 12px; }
+
+    /* Footer */
     .footer-inner { flex-direction: column; text-align: center; }
-    .scroll-top { bottom: 20px; right: 20px; }
+    .scroll-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
 }
