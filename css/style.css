@@ -970,9 +970,7 @@ footer {
     .hero-photo-wrap { align-items: center; }
     .hero-links { justify-content: center; flex-wrap: wrap; }
     .hero-link { padding: 8px 16px; font-size: 13px; }
-    .hero h1 { font-size: 34px; }
-    .hero h1 .hero-word:nth-child(2),
-    .hero h1 .hero-word:nth-child(3) { display: inline; }
+    .hero h1 { font-size: 30px; white-space: nowrap; }
     .hero-bio { font-size: 15px; margin-bottom: 24px; }
     .hero-address { font-size: 11px; }
 
@@ -982,9 +980,7 @@ footer {
     .news-text { font-size: 13px; }
 
     /* Education */
-    .edu-card { flex-direction: column; gap: 10px; align-items: flex-start; }
-    .edu-card .edu-logo { align-self: flex-start; }
-    .edu-year { align-self: flex-start; }
+    .edu-card { flex-direction: column; gap: 10px; align-items: flex-start !important; }
     .edu-gpa { display: block; margin-left: 0; margin-top: 2px; }
 
     /* Experience */
