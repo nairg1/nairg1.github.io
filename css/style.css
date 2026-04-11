@@ -6,7 +6,7 @@
     --accent-light: #6b8fc0;
     --accent-bg: #e8f0fc;
     --bg: #f5f8ff;
-    --bg-card: rgba(237, 244, 255, 0.5);
+    --bg-card: rgba(255, 255, 255, 0.35);
     --text: #1a1f2e;
     --text-secondary: #3d4a5c;
     --text-tertiary: #7a8899;
@@ -871,6 +871,8 @@ main { padding-top: calc(var(--nav-height) + 40px); }
 footer {
     border-top: 1px solid var(--border);
     background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 .footer-inner {
     max-width: var(--max-w);
