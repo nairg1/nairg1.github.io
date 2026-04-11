@@ -2,41 +2,41 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-    --accent: #8a8d62;
-    --accent-light: #AAAD82;
-    --accent-bg: #f2f1ec;
-    --bg: #f7f6f2;
-    --bg-card: #ffffff;
-    --text: #1a1a1a;
-    --text-secondary: #4a4a46;
-    --text-tertiary: #9a9a94;
-    --border: #e0ded8;
-    --gold: #B29B52;
-    --sand: #E6DEC8;
-    --sage: #D1D3CE;
-    --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-    --shadow-md: 0 4px 16px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.03);
-    --shadow-lg: 0 12px 32px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.03);
+    --accent: #4a6fa5;
+    --accent-light: #6b8fc0;
+    --accent-bg: #e8f0fc;
+    --bg: #f5f8ff;
+    --bg-card: rgba(237, 244, 255, 0.5);
+    --text: #1a1f2e;
+    --text-secondary: #3d4a5c;
+    --text-tertiary: #7a8899;
+    --border: #b0c8e8;
+    --gold: #4a6fa5;
+    --sand: #dce8f5;
+    --sage: #b8d0ed;
+    --shadow-sm: 0 1px 2px rgba(26,31,46,0.06);
+    --shadow-md: 0 4px 16px rgba(26,31,46,0.08), 0 1px 3px rgba(26,31,46,0.04);
+    --shadow-lg: 0 12px 32px rgba(26,31,46,0.1), 0 4px 8px rgba(26,31,46,0.04);
     --radius: 12px;
     --nav-height: 64px;
     --max-w: 960px;
-    --nav-bg: rgba(247, 246, 242, 0.8);
-    --nav-bg-scroll: rgba(247, 246, 242, 0.95);
+    --nav-bg: rgba(245, 248, 255, 0.8);
+    --nav-bg-scroll: rgba(245, 248, 255, 0.95);
 }
 
 [data-theme="dark"] {
-    --accent: #AAAD82;
-    --accent-light: #c4c6a6;
-    --accent-bg: rgba(170, 173, 130, 0.1);
-    --bg: #0e0e0c;
-    --bg-card: #1a1a17;
-    --text: #e4e3de;
-    --text-secondary: #a8a7a0;
-    --text-tertiary: #6b6b64;
-    --border: #2a2a26;
-    --gold: #c4ab66;
-    --sand: #3d3929;
-    --sage: #2a2b28;
+    --accent: #6b8fc0;
+    --accent-light: #8dadd6;
+    --accent-bg: rgba(74, 111, 165, 0.12);
+    --bg: #0c0f14;
+    --bg-card: #141820;
+    --text: #dce4f0;
+    --text-secondary: #94a3b8;
+    --text-tertiary: #5c6b80;
+    --border: #1e2a3a;
+    --gold: #6b8fc0;
+    --sand: #1a2535;
+    --sage: #1e2a3a;
     --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
     --shadow-md: 0 4px 16px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.25);
     --shadow-lg: 0 12px 32px rgba(0,0,0,0.45), 0 4px 8px rgba(0,0,0,0.25);
@@ -379,7 +379,7 @@ main { padding-top: calc(var(--nav-height) + 40px); }
     background: var(--accent-light);
     color: #fff;
     transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(138, 141, 98, 0.25);
+    box-shadow: 0 4px 14px rgba(74, 111, 165, 0.25);
 }
 .hero-link.secondary {
     background: var(--bg-card);
@@ -918,7 +918,7 @@ footer {
     visibility: hidden;
     transform: translateY(12px);
     transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-    box-shadow: 0 4px 14px rgba(138, 141, 98, 0.25);
+    box-shadow: 0 4px 14px rgba(74, 111, 165, 0.25);
     z-index: 999;
 }
 .scroll-top.visible {
@@ -929,7 +929,7 @@ footer {
 .scroll-top:hover {
     background: var(--accent-light);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(138, 141, 98, 0.35);
+    box-shadow: 0 6px 20px rgba(74, 111, 165, 0.35);
 }
 .scroll-top svg { width: 20px; height: 20px; }
 
