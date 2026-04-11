@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Gokul M Nair</title>
+    <meta name="description" content="Curriculum Vitae of Gokul Monikantan Nair. Data Scientist at CHOP.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .cv-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .cv-header div { }
+        .cv-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            background: var(--accent);
+            color: #fff;
+            transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .cv-download:hover {
+            background: var(--accent-light);
+            color: #fff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 14px rgba(138, 141, 98, 0.25);
+        }
+        .cv-download svg { width: 16px; height: 16px; }
+        .cv-preview {
+            width: 100%;
+            height: 80vh;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--bg-card);
+        }
+        .cv-preview iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @media (max-width: 640px) {
+            .cv-preview { height: 60vh; }
+            .cv-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── Navbar ── -->
+<nav id="navbar">
+    <div class="nav-primary">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">G. Nair</a>
+            <div class="nav-pages">
+                <a href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="cv.html" class="active">CV</a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<section class="section" style="padding-top: 80px;">
+    <a href="index.html" style="font-size: 13px; font-weight: 500; color: var(--text-tertiary); display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to home
+    </a>
+
+    <div class="cv-header">
+        <div>
+            <p class="section-label">Curriculum Vitae</p>
+            <h2 class="section-title" style="margin-bottom: 0;">Gokul Monikantan Nair</h2>
+        </div>
+        <a href="assets/Gokul_Nair_Resume.pdf" download class="cv-download">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+        </a>
+    </div>
+
+    <div class="cv-preview">
+        <iframe src="assets/Gokul_Nair_Resume.pdf" title="CV Preview"></iframe>
+    </div>
+</section>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer>
+    <div class="footer-inner">
+        <span class="footer-name">Gokul Monikantan Nair</span>
+        <div class="footer-links">
+            <a href="mailto:nairg1@chop.edu">nairg1@chop.edu</a>
+            <a href="https://github.com/nairg1" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=rhHh-7oAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+            <a href="https://www.linkedin.com/in/gokulnair31/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
