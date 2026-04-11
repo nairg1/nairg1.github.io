@@ -5,7 +5,7 @@
     --accent: #4a6fa5;
     --accent-light: #6b8fc0;
     --accent-bg: #e8f0fc;
-    --bg: #f9fbff;
+    --bg: #ffffff;
     --bg-card: rgba(255, 255, 255, 0.35);
     --text: #1a1f2e;
     --text-secondary: #3d4a5c;
@@ -20,8 +20,8 @@
     --radius: 12px;
     --nav-height: 64px;
     --max-w: 960px;
-    --nav-bg: rgba(249, 251, 255, 0.8);
-    --nav-bg-scroll: rgba(249, 251, 255, 0.95);
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --nav-bg-scroll: rgba(255, 255, 255, 0.95);
 }
 
 [data-theme="dark"] {
