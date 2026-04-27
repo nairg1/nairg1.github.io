@@ -689,17 +689,27 @@ main { padding-top: calc(var(--nav-height) + 40px); }
 .pub-list { display: flex; flex-direction: column; gap: 16px; }
 .pub-thumb {
     width: 100%;
-    height: 140px;
-    object-fit: cover;
+    height: 160px;
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 16px;
     border: 1px solid var(--border);
     display: block;
-    background: var(--bg);
+    background: var(--bg-card);
+    padding: 8px;
     transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .pub-card:hover .pub-thumb {
     transform: scale(1.02);
+}
+.pub-thumb-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.pub-thumb-row .pub-thumb {
+    width: 50%;
+    margin-bottom: 0;
 }
 
 .pub-card {
