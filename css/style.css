@@ -808,6 +808,16 @@ main { padding-top: calc(var(--nav-height) + 40px); }
     padding: 3px 10px;
     border-radius: 100px;
 }
+.pub-badge--oral {
+    color: #7c4a1e;
+    background: #fef0e4;
+}
+.pub-badge--journal {
+    color: #1a5c38;
+    background: #e4f5ec;
+}
+[data-theme="dark"] .pub-badge--oral { color: #e8a87c; background: rgba(228, 120, 40, 0.12); }
+[data-theme="dark"] .pub-badge--journal { color: #5ec48a; background: rgba(40, 180, 100, 0.1); }
 .scholar-link {
     display: inline-flex;
     align-items: center;
