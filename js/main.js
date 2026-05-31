@@ -47,6 +47,44 @@ document.querySelectorAll('.nav-sections a').forEach(link => {
     });
 });
 
+// ── Lightbox ──
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+function openLightbox(src, alt) {
+    if (!lightbox || !lightboxImg) return;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.hidden = false;
+    requestAnimationFrame(() => lightbox.classList.add('visible'));
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove('visible');
+    document.body.style.overflow = '';
+    setTimeout(() => { lightbox.hidden = true; lightboxImg.src = ''; }, 200);
+}
+
+document.querySelectorAll('[data-lightbox]').forEach(el => {
+    el.addEventListener('click', (e) => {
+        e.preventDefault();
+        openLightbox(el.dataset.lightbox, el.dataset.lightboxAlt);
+    });
+});
+
+if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    lightboxClose?.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    });
+}
+
 // ── Dark mode toggle ──
 const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) {
