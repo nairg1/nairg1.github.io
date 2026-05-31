@@ -52,6 +52,7 @@
                 <span class="pub-year">2026</span>
                 <span class="pub-badge">Forthcoming</span>
                 <span class="pub-badge pub-badge--oral">Oral</span>
+                <a href="#" class="pub-badge pub-badge--award" data-lightbox="assets/IMG_5913.jpeg" data-lightbox-alt="FG 2026 Best Paper Award certificate">🏆 Best Paper Award</a>
                 <a href="https://arxiv.org/abs/2604.21011" target="_blank" rel="noopener" class="pub-doi">
                     arXiv <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
@@ -166,6 +167,14 @@
     </div>
 </footer>
 
-<script src="js/main.js?v=2"></script>
+<!-- ── Lightbox ── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" alt="">
+</div>
+
+<script src="js/main.js?v=3"></script>
 </body>
 </html>

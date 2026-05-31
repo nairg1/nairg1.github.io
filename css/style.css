@@ -816,8 +816,85 @@ main { padding-top: calc(var(--nav-height) + 40px); }
     color: #1a5c38;
     background: #e4f5ec;
 }
+.pub-badge--award {
+    color: #7a5a00;
+    background: linear-gradient(135deg, #fff4c4 0%, #ffe48a 100%);
+    border: 1px solid #e6c14a;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+.pub-badge--award:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(230, 193, 74, 0.35);
+}
 [data-theme="dark"] .pub-badge--oral { color: #e8a87c; background: rgba(228, 120, 40, 0.12); }
 [data-theme="dark"] .pub-badge--journal { color: #5ec48a; background: rgba(40, 180, 100, 0.1); }
+[data-theme="dark"] .pub-badge--award {
+    color: #ffd86b;
+    background: rgba(230, 193, 74, 0.12);
+    border-color: rgba(230, 193, 74, 0.4);
+}
+
+/* ── Award link in news ── */
+.award-link {
+    color: #b8860b;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(184, 134, 11, 0.5);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+.award-link:hover {
+    color: #d4a017;
+    border-bottom-color: #d4a017;
+}
+[data-theme="dark"] .award-link {
+    color: #ffd86b;
+    border-bottom-color: rgba(255, 216, 107, 0.5);
+}
+[data-theme="dark"] .award-link:hover { color: #ffe89a; border-bottom-color: #ffe89a; }
+
+/* ── Lightbox ── */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.lightbox[hidden] { display: none; }
+.lightbox.visible { opacity: 1; }
+.lightbox-img {
+    max-width: min(95vw, 1100px);
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    background: #fff;
+}
+.lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+.lightbox-close:hover { background: rgba(255, 255, 255, 0.25); }
+.lightbox-close svg { width: 20px; height: 20px; }
 .scholar-link {
     display: inline-flex;
     align-items: center;
