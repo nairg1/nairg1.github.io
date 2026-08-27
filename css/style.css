@@ -782,6 +782,10 @@ main { padding-top: calc(var(--nav-height) + 40px); }
     padding: 4px 12px;
     border-radius: 100px;
 }
+a.pub-venue:hover {
+    color: #fff;
+    filter: brightness(1.1);
+}
 .pub-year {
     font-size: 13px;
     color: var(--text-tertiary);
